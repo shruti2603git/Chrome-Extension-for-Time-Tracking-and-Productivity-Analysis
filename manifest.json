@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Time Tracker & Productivity",
+  "description": "Tracks time spent per website and classifies as productive/unproductive.",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "Productivity",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "tabs",
+    "storage",
+    "idle",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
